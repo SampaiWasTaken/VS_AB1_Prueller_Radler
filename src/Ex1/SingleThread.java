@@ -15,8 +15,6 @@ public class SingleThread
 
         long startTime = System.nanoTime();
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-//        System.out.print("Enter a big number: ");
-//        long number = Long.parseLong(in.readLine());
         long number = Long.MAX_VALUE;
 
         System.out.println(Arrays.deepToString(findDivisors(number).toArray()));

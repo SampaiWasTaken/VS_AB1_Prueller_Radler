@@ -12,7 +12,6 @@ public class MultiThread
 
     public static void main(String[] args) throws IOException, InterruptedException
     {
-
         long startTime = System.nanoTime();
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter a number of threads: ");
@@ -22,7 +21,7 @@ public class MultiThread
 
         for (int i = 0; i < num_threads; i++)
         {
-            WorkerThread worker = new WorkerThread(number, i * (long)(Math.sqrt(number) / num_threads) + 1, (i + 1) * (long)(Math.sqrt(number)  / num_threads));
+            WorkerThread worker = new WorkerThread(number, i * (long) (Math.sqrt(number) / num_threads) + 1, (i + 1) * (long) (Math.sqrt(number) / num_threads));
             workers[i] = worker;
             worker.start();
         }
@@ -37,7 +36,12 @@ public class MultiThread
     {
         for (long i = start; i <= end; i++)
             if (l % i == 0)
-                divisors.add(i);
+            {
+                synchronized (divisors)
+                {
+                    divisors.add(i);
+                }
+            }
     }
 
     public static class WorkerThread extends Thread
