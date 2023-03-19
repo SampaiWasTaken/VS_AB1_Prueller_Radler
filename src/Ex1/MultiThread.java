@@ -1,3 +1,5 @@
+package Ex1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,12 +17,12 @@ public class MultiThread
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter a number of threads: ");
         int num_threads = Integer.parseInt(in.readLine());
-        long number = 10000000000L;
+        long number = Long.MAX_VALUE;
         WorkerThread[] workers = new WorkerThread[num_threads];
 
         for (int i = 0; i < num_threads; i++)
         {
-            WorkerThread worker = new WorkerThread(number, i * (long) (number / num_threads) + 1, (i + 1) * (long) (number / num_threads));
+            WorkerThread worker = new WorkerThread(number, i * (long)(Math.sqrt(number) / num_threads) + 1, (i + 1) * (long)(Math.sqrt(number)  / num_threads));
             workers[i] = worker;
             worker.start();
         }
