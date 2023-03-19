@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32151dcf-db1a-4f2f-8113-26fc1200025e" name="Changes" comment="Bug fixes for 1.1">
-      <change afterPath="$PROJECT_DIR$/src/Ex2/ThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VS_AB1_Prueller_Radler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VS_AB1_Radler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1/MultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1/MultiThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1/SingleThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1/SingleThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex2/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2/ThreadPool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
   <component name="RunManager" selected="Application.ThreadPool">
     <configuration name="SingleThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ex1.SingleThread" />
-      <module name="VS_AB1_Prueller_Radler" />
+      <module name="VS_AB1_Radler" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Ex1.*" />
@@ -59,13 +61,26 @@
     </configuration>
     <configuration name="ThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ex2.ThreadPool" />
-      <module name="VS_AB1_Prueller_Radler" />
+      <module name="VS_AB1_Radler" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Ex2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="VS_AB1_Radler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="VS_AB1_Radler" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679232904314</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bug fixes for 1.1">
+      <created>1679236642064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679236642064</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

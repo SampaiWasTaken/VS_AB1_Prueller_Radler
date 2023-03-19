@@ -1,7 +1,4 @@
 package Ex2;
-
-import Ex1.MultiThread;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,7 +18,6 @@ public class ThreadPool
         System.out.print("Enter a number of threads: ");
         int num_threads = Integer.parseInt(in.readLine());
         long startTime = System.nanoTime();
-
         ExecutorService pool = Executors.newFixedThreadPool(num_threads);
 
         for (long i = 2; i <= Math.sqrt(l); i += 10000)
@@ -45,17 +41,13 @@ public class ThreadPool
         public void run()
         {
             while (!queue.isEmpty())
-            {
                 for (long i = queue.poll(); i < i + 10; i++)
-                {
                     if (l % i == 0)
                     {
                         isPrime = false;
                         queue.clear();
                         break;
                     }
-                }
-            }
         }
     }
 }

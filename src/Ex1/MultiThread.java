@@ -36,12 +36,10 @@ public class MultiThread
     {
         for (long i = start; i <= end; i++)
             if (l % i == 0)
-            {
                 synchronized (divisors)
                 {
                     divisors.add(i);
                 }
-            }
     }
 
     public static class WorkerThread extends Thread
